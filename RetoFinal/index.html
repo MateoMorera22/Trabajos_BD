@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="css/styles.css"></script>   
-    <title>Reto Final</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Reto Final</title>
 </head>
+
 <body>
 
-    
+
   <div class="row">
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Prueba lista</span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
+    <div class="col s0 m2 l3"></div>
+    <div class="col s12 m8 l6">
+      <div class="card cardmain z-depth-5">
+        <div class="card-content">
+          <a class="btn-floating btn-small waves-effect waves-light right light-blue darken-2
+          tooltipped" data-position="right" data-tooltip="Listado de clases" href="html/Listado_clases.html"><i class="material-icons">school</i></a>
+          <a class="btn-floating btn-small waves-effect waves-light right green darken-2 tooltipped
+          " data-position="left" href="html/Matricular_Estudiante.html" data-tooltip="Matricular nuevo estudiante" style="margin-right: 10px;"><i
+              class="material-icons">person_add</i></a>
+          <span class="card-title">Estudiantes registrados</span>
+          <div class="contenedor">
+            <ul class="collapsible z-depth-2 indigo lighten-1 white-text" style="border-radius: 25px;">
+              <li>
+                <div class="collapsible-header indigo lighten-1" style="border-radius: 25px;">
+                  <i class="material-icons" style="margin-top: 10px;">person</i>
+                  <span>Nombre del estudiante:<br>ID:</span>
+                </div>
+                <div class="collapsible-body indigo lighten-1" style="border-radius: 25px; border: none;">
+                  <a class="btn-floating btn-small waves-effect waves-light right  red accent-4 tooltipped"
+                    data-position="right" data-tooltip="Eliminar el estudiante"><i class="material-icons">delete</i></a>
+                  <a class="btn-floating btn-small waves-effect waves-light right  grey darken-1 tooltipped
+          " data-position="left" data-tooltip="Editar datos del estudiante" href="html/Editar_Estudiante.html" style="margin-right: 10px;"><i
+                      class="material-icons">edit_note</i></a>
+                  <h5>Datos del estudiante</h4>
+                    <span>ID: </span><br>
+                    <span>Nombre:</span><br>
+                    <span>Apellido:</span><br>
+                    <span>Clases matriculadas</span>
+                    <ol>
+                      <li>Clase: ID: </li>
+                      <li>Clase: ID: </li>
+                      <li>Clase: ID: </li>
+                    </ol>
+                </div>
+              </li>
+          </div>
         </div>
       </div>
     </div>
+    <div class="col s0 m2 l3"></div>
   </div>
 
-    
+
+
+
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="js/scripts.js"></script>
+
 </html>

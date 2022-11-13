@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/Listado_clases_styles.css">
+    <title>Listado de clases</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col s12 m2 l3">
+            <a class="btn-floating btn-large waves-effect waves-light indigo lighten-1 left tooltipped"
+            data-position="right" data-tooltip="Volver al listado de estudiantes" style="margin-top: 20px;
+            margin-left: 10px;" href="../index.html"><i class="material-icons">undo</i></a>
+        </div>
+        <div class="col s12 m8 l6">
+          <div class="card tarjeta-principal z-depth-5">
+            <div class="card-content">
+                <a class="btn-floating btn-small waves-effect waves-light right teal darken-1
+          tooltipped" data-position="left" data-tooltip="Agregar clase" href="Crear_clase.html"><i class="material-icons">format_list_bulleted_add</i></a>
+              <span class="card-title">Listado de clases</span>
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                      <th>Título de clase</th>
+                      <th>Descripción</th>
+                      <th>Editar</th>
+                      <th>Eliminar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mates</td>
+                    <td>Numeros</td>
+                    <td><a class="waves-effect waves-light btn-small  grey darken-2" href="Editar_clase.html"><i class="material-icons">edit</i></a></td>
+                    <td><a class="waves-effect waves-light btn-small red darken-4"><i class="material-icons">delete</i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col s0 m2 l3"></div>
+      </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../js/Listados_clases_scripts.js"></script>
+
+</html>

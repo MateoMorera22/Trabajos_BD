@@ -1,0 +1,14 @@
+body{
+    background-color: rgba(rgb(166, 166, 166), green, blue, alpha);
+}
+
+.tarjetaPrincial{
+margin-top: 150px;
+border-radius: 25px;
+}
+
+.contenedor{
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}

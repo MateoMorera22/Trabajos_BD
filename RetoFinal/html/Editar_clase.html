@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/crear_editar_clases_styles.css">
+    <title>Editar clase</title>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col 0 m2 l3">
+            <a class="btn-floating btn-large waves-effect waves-light indigo lighten-1 left tooltipped"
+            data-position="right" data-tooltip="Volver al listado de clases" style="margin-top: 20px;
+            margin-left: 10px;" href="Listado_clases.html"><i class="material-icons">undo</i></a>
+        </div>
+        <div class="col s12 m8 l6">
+          <div class="card tarjetaPrincial z-depth-5">
+            <div class="card-content">
+              <span class="card-title center">Editar clase</span>
+              <div class="contenedor">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input placeholder="Ingrese el nombre de la clase" id="first_name" type="text" class="validate">
+                        <label for="first_name">Nombre de la clase</label>
+                      </div>
+
+                      <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Descripción de la clase</label>
+                      </div>
+                      
+                      <div class="col s4"></div>
+                      <div class="col s4">
+                        <a class="waves-effect waves-light btn teal darken-1" style="margin-top: 10px;" href="Listado_clases.html"><i class="material-icons left">format_list_bulleted_add</i>Editar clase</a>
+                      </div>
+                      <div class="col s4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col 0 m2 l3"></div>
+      </div>
+
+
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="../js/crear_editar_clases.js"></script>
+</html>

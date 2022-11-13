@@ -1,0 +1,9 @@
+body{
+    background-color: rgba(rgb(164, 164, 164), green, blue, alpha);
+}
+
+.tarjeta-principal{
+    border-radius: 25px;
+    margin-top: 150px;
+}
+
