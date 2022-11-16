@@ -226,7 +226,7 @@ db.Empleados.updateMany({}, {$set: {"comida_favorita":
 }
 }})
 
-// 11. Contar los empleados que tengan apellido Torres
+// 12. Contar los empleados que tengan apellido Torres
 const database3 = 'Compañia';
 use(database3)
 db.Empleados.find({"apellido":"Torres"}).count();
@@ -236,7 +236,7 @@ db.Empleados.find({"apellido":"Torres"}).count();
 
 const database3 = 'Compañia';
 use(database3)
-db.Empleados.find({ }).sort( { "fechadecontratación" : -1} ).limit(1)
+db.Empleados.find({ }).sort( { "fechadecontratación" : -1} ).pretty()
 
 
 Listado de operadores relacionales
