@@ -174,8 +174,34 @@ db.Empresa.insertMany([
 //Ejercicio 4.2:
 const database3 = 'Compañia';
 use(database3);
-db.Empleados.updateMany({}, {$set: {"campo_prueba": "prueba"}})
+db.Empleados.updateOne({'_id':9}, {$set: {"empresa_id": "63742d27069ec6d7236cbb99"}})
+db.Empleados.updateOne({'_id':10}, {$set: {"empresa_id": "63742d27069ec6d7236cbb99"}})
+db.Empleados.updateOne({'_id':11}, {$set: {"empresa_id": "63742d27069ec6d7236cbb99"}})
+db.Empleados.updateMany({}, {$set: {"empresa_id": "63742d27069ec6d7236cbb98"}})
 
+
+//ejercicio 5
+const database3 = 'Compañia';
+use(database3)
+db.Empleados.find({'empresa_id':"63742d27069ec6d7236cbb99"})
+
+
+//ejercicio 7
+const database3 = 'Compañia';
+use(database3)
+db.Empleados.deleteMany({'empresa_id':"63742d27069ec6d7236cbb99"})
+
+// Ejercicio 8
+const database3 = 'Compañia';
+use(database3)
+db.Empresa.updateOne({'nombre':"Empresa 1"}, {$set: {"nombre": "Universidad EAN"}})
+
+
+//9. Consultar todos los empleados que su sueldo este entre $1000000 y $6000000
+const database3 = 'Compañia';
+use(database3)
+//db.Empleados.find({"Nomina":{$gte:1000000}})
+db.getCollection("Empleados").find({ $and: [ { "Nomina": { $gte: 1000000 } }, { "Nomina": { $lte: 6000000 }} ] })
 
 
 
