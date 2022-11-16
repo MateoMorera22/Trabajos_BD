@@ -204,6 +204,40 @@ use(database3)
 db.getCollection("Empleados").find({ $and: [ { "Nomina": { $gte: 1000000 } }, { "Nomina": { $lte: 6000000 }} ] })
 
 
+//10.sumar todos los sueldos de los empleados de la empresa "Universidad Ean"
+const database3 = 'Compañia';
+use(database3)
+db.Empleados.aggregate([
+  {
+    $group: {
+      _id: null,
+      "Suma Total": { $sum: '$Nomina' },
+    },
+  },
+]);
+
+//11. Modificar todos los empleados para que tengan un atributo array con comidas favoritas ["pizza","hamburguesa"...]
+const database3 = 'Compañia';
+use(database3)
+db.Empleados.updateMany({}, {$set: {"comida_favorita":
+{
+"id_comida":0,
+"nombre_comida": null
+}
+}})
+
+// 11. Contar los empleados que tengan apellido Torres
+const database3 = 'Compañia';
+use(database3)
+db.Empleados.find({"apellido":"Torres"}).count();
+
+// 14.Consultar el empleado más joven, ya que no existe el atributo de edad se
+// consulta el empleado que mas reciente entro a la empresa.
+
+const database3 = 'Compañia';
+use(database3)
+db.Empleados.find({ }).sort( { "fechadecontratación" : -1} ).limit(1)
+
 
 Listado de operadores relacionales
 $eq - equal - igual
